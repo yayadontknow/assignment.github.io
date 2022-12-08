@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta title="LOVE" />
+    <link href='https://fonts.googleapis.com/css?family=Geometr212 BkCn BT' rel='stylesheet'>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Geometr212 BkCn BT';
+            font-size: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="../Assets/Images/school_logo.png">
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#merchandise">Merchandise</a></li>
+            </ul>
+        </nav>
+        <div onclick="location.href='#register';" style="cursor: pointer;">
+            <h3 id="register-button">Register</h1>
+        </div>
+    </div>
+    <div class="page-content">
+        <!-- Automatic Slideshow Images + Timer-->
+        <div>
+            <div style="position: absolute;z-index: 20; width: 100%; padding-top: 20%;">
+                <h1 style="text-align: center; font-size: 100px;">Run For A Better Tomorow</h1>
+                <div id="timer"></div>
+            </div>
+            <div class="mySlides">
+                <img src="../Assets/Images/activity1.jfif" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="../Assets/Images/activity2.jfif" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="../Assets/Images/activity3.jfif" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="../Assets/Images/activity4.jfif" style="width:100%">
+            </div>
+        </div>
+        <!-- End of Automatic Slideshow Images + Timer-->
+        <!-- About Page -->
+        <!-- <div>
+            <figure class="image-left">
+                <img style="width: 70%;" src="../Assets/Images/logo.png" alt="A nice picture" />
+                <figcaption>
+                    <h2>For A Better Environment, For The Students</h2>
+                    <p>"Run for Kheng Chee" is organized to raise funds for SJKC Kheng Chee. We aim to raise RM20,000
+                        through this event to resolve problems such as the lack of several classrooms and school
+                        facilities.
+                        </br>
+                        </br>
+                        Since the school opened in 2014, the number of students has increased over the years causing the
+                        school to have insufficient classrooms. The school also lacks facilities such as a Music room,
+                        Computer room, and others. Therefore, this charity run aims to raise funds to build a better
+                        environment for the students.</p>
+                </figcaption>
+            </figure>
+        </div> -->
+        <div id="about" style="height: 400px;padding-top: 20%;padding-bottom: 20%">
+            <div style="margin-left: 20%;margin-right: 20%;">
+                <h2 style="font-size: 30px; text-align: center; font-weight: bold;">About Us</h2>
+                <p style="opacity: 70%; text-align: center;"><i>Run for bright future</i></p>
+                <p>"Run for Kheng Chee" is organized to raise funds for SJKC Kheng Chee. We aim
+                    to raise RM20,000
+                    through this event to resolve problems such as the lack of several classrooms and school facilities.
+                    </br>
+                    </br>
+                    Since the school opened in 2014, the number of students has increased over the years causing the
+                    school to have insufficient classrooms. The school also lacks facilities such as a Music room,
+                    Computer room, and others. Therefore, this charity run aims to raise funds to build a better
+                    environment for the students.
+                </p>
+            </div>
+        </div>
+        <div id="info" style="height: 600px;">
+            <div style="display: flex; flex-direction: row;">
+                <video id="video_played" autoplay muted>
+                    <source src="../Assets/Videos/school run.mp4" type="video/mp4">
+                </video>
+                <div style="padding:20px">
+                    <h1 style="font-weight: bolder;">Event info</h1>
+                    <p>
+                        We have prepared a variety of food stalls and activities!
+                        </br>
+                        Bring your friends and family along for a memorable outing day!
+                        </br>
+                        Can't wait to see you there!
+                        </br>
+                        <b>Category and Pricing</b>
+                        </br>
+                        Junior Male and Female
+                        </br>
+                        (Age below 18)
+                        </br>
+                        Price: RM35
+                        </br>
+                        </br>
+                        Adult Male
+                        </br>
+                        (Age above 18)
+                        </br>
+                        RM55
+                        </br>
+                        </br>
+                        Adult Female</br>
+                        (Age above 18)</br>
+                        RM55</br>
+                        </br>
+                        Location</br>
+                        Wawasan Park, Puchong
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="register" style="height: 400px;padding-top: 400px;padding-bottom: 200px;">
+            <div class="login-box">
+                <h2>Register</h2>
+                <form>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Gender</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Age</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Email address</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Contact No.</label>
+                    </div>
+                    <a href="#register" onclick="submitted()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div id="merchandise" class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h1 style="font-size: 100px; text-align: center;">Merchandise</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function submitted() {
+            alert("Submitted!");
+        }
+    </script>
+</body>
+
+</html>
